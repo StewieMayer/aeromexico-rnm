@@ -1,6 +1,6 @@
 import Image from "next/image";
 import ReduxProvider from "../lib/ReduxProvider";
-import Logo from "../../public/logo.png";
+import Logo from "../public/logo.png";
 import "./globals.css";
 
 export default function RootLayout({
