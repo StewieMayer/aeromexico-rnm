@@ -1,7 +1,9 @@
+import Viewer from "@/components/Viewer/Viewer";
+
 export default function Page() {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <Viewer>
+      Hello
+    </Viewer>
   );
 }
