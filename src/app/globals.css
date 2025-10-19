@@ -1,1 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@300;400;700&display=swap");
+
+:root {
+  --font-family-base: "Roboto Condensed", sans-serif;
+  --color-green-base: #76dd00;
+  --color-black-base: #1c1c1c;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: var(--font-family-base);
+}
+
+/* Layout theme */
+body{
+  background-color: var(--color-black);
+  background-image: url('/background.jpg');
+  background-size: 100% 100dvh;
+  background-repeat: repeat-x;
+  background-position: calc(100vw * -0.40) -54px;
+}
+
+.grass{
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background: linear-gradient(#9EDF25,#1E2E00);
+  filter: drop-shadow(0 4px 4px 0 rgba(0,0,0,0.25));
+}
+
+/* Content Layer */
+
+.content-layer{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.main-container{
+  width: 50vw;
+}
+
+.header{
+  display: flex;
+  justify-content: end;
+  padding: 68px 77px 39px;
+}
+
+.header>img{
+  width: 332px;
+  height: 95px;
+}
+
+.app-container{
+  width: 100%;
+  height: 66dvh;
+  background-color: white;
+  overflow: hidden;
+}
+
+
 
