@@ -5,6 +5,7 @@ const initialState: CharactersState = {
   characters: [],
   filteredCharacters: [],
   currentCharacter: null,
+  favorites: [],
 };
 
 export const charactersSlice = createSlice({
@@ -29,13 +30,18 @@ export const charactersSlice = createSlice({
     setCurrentCharacter: (state, action: PayloadAction<Character | null>) => {
       state.currentCharacter = action.payload;
     },
+    addFavorite: (state, action: PayloadAction<Character>) => {
+      state.favorites.push(action.payload);
+    },
+    removeFavorite: (state, action: PayloadAction<Character>) => {
+      state.favorites = state.favorites.filter(
+        (favorite) => favorite.id != action.payload.id
+      );
+    },
   },
 });
 
-export const {
-  setAllCharacters,
-  filterCharacters,
-  setCurrentCharacter,
-} = charactersSlice.actions;
+export const { setAllCharacters, filterCharacters, setCurrentCharacter, addFavorite,removeFavorite } =
+  charactersSlice.actions;
 
 export default charactersSlice.reducer;
