@@ -1,0 +1,27 @@
+.badgeContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    border-radius: 30px;
+    padding: 11px 21px 7px 24px;
+    box-shadow: 15px 15px 30px 0 #191919;
+    color: white;
+}
+
+.badgeContainer:hover{
+    cursor: pointer;
+    background-color: #4F4F4FCC;
+}
+
+.badgeContainerActive{
+    border: 2px solid var(--color-green-base) ;
+}
+
+.badgeTitle{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 20px;
+}

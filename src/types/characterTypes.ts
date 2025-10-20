@@ -29,4 +29,5 @@ export interface CharactersState {
   characters: Character[];
   filteredCharacters: Character[];
   currentCharacter: Character | null;
+  favorites:Character[];
 }

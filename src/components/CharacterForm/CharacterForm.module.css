@@ -1,0 +1,38 @@
+.formContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 45px 0 19px;
+}
+
+.searchContainer {
+  background-color: none;
+  display: flex;
+  gap: 8px;
+  border: 1px solid var(--color-green-base);
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 16px;
+  color: var(--color-green-base);
+}
+.searchIcon {
+  font-size: 18px;
+  align-self: center;
+}
+
+.searchInput {
+  background: none;
+  color: var(--color-green-base);
+}
+
+.searchInput,
+.searchInput:active,
+.searchInput:focus {
+  border: none;
+  outline: none;
+}
+
+.searchInput::placeholder {
+  color: var(--color-green-base);
+  opacity: 0.7;
+}
