@@ -15,6 +15,6 @@ export const CharacterBadge = ({character}:CharacterBadgeProps)=>{
     return <div className={`${style.badgeContainer} ${isActive ? style.badgeContainerActive : ''}`} onClick={setCurrent}>
         <div className={`${style.badgeTitle}`}>{character.name.split(' ')[0].toUpperCase()}</div>
         <Image src={character.image} alt={character.name} width={145} height={145}/>
-        <LikeButton id={character.id} />
+        <LikeButton character={character} />
     </div>
 }

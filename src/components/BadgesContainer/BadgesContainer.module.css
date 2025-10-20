@@ -1,9 +1,33 @@
-.container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 55px;
-    justify-content: center;
-    flex-grow: 1;
-    padding: 0 20px;
-    overflow-y: scroll;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 55px;
+  justify-content: center;
+  flex-grow: 1;
+  padding: 0 20px;
+  overflow-y: scroll;
+}
+
+.container::-webkit-scrollbar {
+  width: 32px;
+}
+
+.container::-webkit-scrollbar-corner {
+  background-color: white;
+}
+
+.container::-webkit-scrollbar-button {
+  background-color: #7b7b7bb2;
+  border-radius: 4px;
+  width: 32px;
+  height: 32px;
+}
+
+
+.container::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M10 5l-5 5h10l-5-5z' fill='%2300FF00'/></svg>");
+}
+
+.container::-webkit-scrollbar-button:vertical:increment {
+  background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><path d='M10 15l-5-5h10l-5 5z' fill='%2300FF00'/></svg>");
 }
