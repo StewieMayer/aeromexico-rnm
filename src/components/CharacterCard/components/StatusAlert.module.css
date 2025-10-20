@@ -1,10 +1,10 @@
 .statusContainer {
-  width: 100px;
   height: 28px;
   border-radius: 10px;
+  min-width: 100px;
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding: 0 10px;
   gap: 9px;
   color: white;
   background-color: #1a1a1a;
@@ -19,11 +19,11 @@
 }
 
 .unknown {
-  background: radial-gradient(white, gray);
+  background: radial-gradient(white, #666);
 }
 .dead {
   background: radial-gradient(#e92507, #7c1616);
 }
 .alive {
-  background: radial-gradient(#f1f510,#608f09);
+  background: radial-gradient(#f1f510, #608f09);
 }
